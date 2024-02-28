@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const {imageUplaod, videoUplaod, imageReducerUplaod, localUpload} = require("../controller/fileUpload");
+const {localFileUpload} = require("../controller/fileUpload");
 
-router.post("/imageUpload", imageUplaod);
-router.post("/imageUpload", imageUplaod);
-router.post("/imageUpload", imageUplaod);
-router.post("/imageUpload", imageUplaod);
+router.post('/localUpload', localFileUpload)
+
+module.exports = router;
